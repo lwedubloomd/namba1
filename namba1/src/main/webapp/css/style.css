@@ -78,7 +78,7 @@ h6 {
 p {
 	font-size: 15px;
 	font-family: "Mulish", sans-serif;
-	color: #3d3d3d;
+	color: #22A39F;
 	font-weight: 400;
 	line-height: 25px;
 	margin: 0 0 15px 0;
@@ -351,7 +351,7 @@ ol {
 
 .header__menu ul li.active a {
 	background: #22a39f;
-	color: #f3efe0;
+	color: #ffffff;
 }
 
 .header__menu ul li:hover a {
@@ -1313,7 +1313,7 @@ ol {
 	position: absolute;
 	right: -14px;
 	top: 0;
-	content: "";
+	content: "�꼨";
 	font-family: "FontAwesome";
 }
 
@@ -1997,7 +1997,7 @@ ol {
 -----------------------*/
 
 .footer {
-	background: #070720;
+	background: #434242;
 	padding-top: 60px;
 	padding-bottom: 40px;
 	position: relative;
@@ -2051,13 +2051,13 @@ ol {
 }
 
 .footer__copyright__text {
-	color: #b7b7b7;
+	color: #22A39F;
 	margin-bottom: 0;
 	text-align: right;
 }
 
 .footer__copyright__text a {
-	color: #e53637;
+	color: #22A39F;
 }
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/

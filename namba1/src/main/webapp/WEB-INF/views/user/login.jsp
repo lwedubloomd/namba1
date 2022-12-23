@@ -36,14 +36,14 @@
 				<div class="col-lg-6">
 					<div class="login__form">
 						<h3>Login</h3>
-						<form action="#">
+                        <form id="frm" action="userLogin.do" method="post">
 							<div class="input__item">
-								<input type="text" placeholder="Email address"> <span
+								<input type="text" id="userEmail" name="userEmail" required="required" placeholder="Email address"> <span
 									class="icon_mail"></span>
 							</div>
 							<div class="input__item">
-								<input type="text" placeholder="Password"> <span
-									class="icon_lock"></span>
+                                <input type="password" id="userPassword" name="userPassword" placeholder="Password">
+								<span class="icon_lock"></span>
 							</div>
 							<button type="submit" class="site-btn">Login Now</button>
 						</form>
@@ -53,7 +53,7 @@
 				<div class="col-lg-6">
 					<div class="login__register">
 						<h3>Dont’t Have An Account?</h3>
-						<a href="./signup.html" class="primary-btn">Register Now</a>
+						<a href="userJoinForm.do" class="primary-btn">Register Now</a>
 					</div>
 				</div>
 			</div>

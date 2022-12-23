@@ -13,12 +13,12 @@
             </div>
             <div class="col-lg-6">
                 <div class="footer__nav">
-                    <ul>
-                        <li class="active"><a href="./index.html">Homepage</a></li>
-                        <li><a href="./categories.html">Categories</a></li>
-                        <li><a href="./blog.html">Our Blog</a></li>
-                        <li><a href="#">Contacts</a></li>
-                    </ul>
+                            <ul>
+                                <li class="active"><a href="./main.html">메인 홈</a></li>
+                                <li><a href="./categories.html">카테고리</a></li>
+                                <li><a href="./jjim.html">찜</a></li>
+                                <li><a href="./emptypage.html">새로운영화</a></li>
+                            </ul>
                 </div>
             </div>
             <div class="col-lg-3">
