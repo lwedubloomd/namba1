@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import co.nambaone.prj.common.Command;
 import co.nambaone.prj.movie.command.MainCommand;
+import co.nambaone.prj.movie.command.MovieInsertedSelect;
 import co.nambaone.prj.user.command.AjaxuserIdCheck;
 import co.nambaone.prj.user.command.MyPage;
 import co.nambaone.prj.user.command.UserJoin;
@@ -44,6 +45,11 @@ public class frontController extends HttpServlet {
 		map.put("/userLogin.do", new UserLogin()); // 로그인 처리
 		map.put("/userLoginForm.do", new UserLoginForm()); // 로그인 폼(login.jsp랑 연결)
 		map.put("/userLogout.do", new UserLogout()); // 로그아웃 처리
+		
+		
+		
+		//movie
+		map.put("/movieInsertedSelect.do", new MovieInsertedSelect());
 	}
 
 	protected void service(HttpServletRequest request, HttpServletResponse response)
