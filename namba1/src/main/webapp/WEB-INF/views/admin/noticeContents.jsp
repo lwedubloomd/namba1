@@ -1,8 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
     <meta charset="UTF-8">
-    <title>Anime | Template</title>
+    <title>noticeContent</title>
 </head>
 
 <body>
@@ -17,7 +19,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="normal__breadcrumb__text">
-                        <h2>EMPTY PAGE</h2>
+                        <h2>noticeContent</h2>
                         <p>empty</p>
                     </div>
                 </div>

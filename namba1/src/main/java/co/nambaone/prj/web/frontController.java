@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import co.nambaone.prj.common.Command;
-import co.nambaone.prj.main.command.MainCommand;
+import co.nambaone.prj.movie.command.MainCommand;
 
 @WebServlet("*.do")
 public class frontController extends HttpServlet {

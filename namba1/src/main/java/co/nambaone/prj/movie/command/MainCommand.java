@@ -1,4 +1,4 @@
-package co.nambaone.prj.main.command;
+package co.nambaone.prj.movie.command;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -9,8 +9,8 @@ public class MainCommand implements Command {
 
 	@Override
 	public String exec(HttpServletRequest request, HttpServletResponse response) {
-		
-		return "main/main.tiles";
+
+		return "movie/main.tiles";
 	}
 
 }
