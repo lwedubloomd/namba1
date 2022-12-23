@@ -39,21 +39,22 @@
 					<div class="row d-flex justify-content-center">
 						<div class="signup__form">
 							<h3>Sign Up</h3>
-							<form action="#">
+						 <form action="userJoin.do" onsubmit="return formCheck()">
 								<div class="input__item">
-									<input type="text" placeholder="Email address"> <span
-										class="icon_mail"></span>
+									<input type="text" id="userEmail" name="userEmail" placeholder="Email address" required="required"> 
+									<span class="icon_mail"></span>
+									<button type="submit" class="site-btn" onclick="idChk()" id="btnId" value="No">Email address 중복체크</button>	
 								</div>
 								<div class="input__item">
-									<input type="text" placeholder="Nick Name"> <span
+									<input type="text" id="userNickname" name="userNickname" placeholder="Nick Name" required="required"> <span
 										class="icon_profile"></span>
 								</div>
 								<div class="input__item">
-									<input type="password" placeholder="Password"> <span
+									<input type="password" id="userPassword" name="userPassword" placeholder="Password" required="required"> <span
 										class="icon_lock"></span>
 								</div>
 								<div class="input__item">
-									<input type="password" placeholder="Check Password"> <span
+									<input type="password" id="passwordChk" placeholder="Check Password" required="required"> <span
 										class="icon_lock"></span>
 								</div>
 								<button type="submit" class="site-btn">complete</button>
@@ -78,6 +79,49 @@
 		</div>
 	</div>
 	<!-- Search model end -->
+
+<script type="text/javascript">
+	function formCheck() { // 유저 아이디 중복체크 및 패스워드 종일성 확인
+		let pass1 = document.getElementById("userPassword").value;
+		let pass2 = document.getElementById("passwordChk").value; 
+		let checkId = document.getElementById("btnId").value;
+		
+		if(checkId == "No"){
+			alert("이메일 중복체크를 하세요!");
+			return false;
+		}
+		
+		
+		if(pass1 != pass2){
+			alert("패스워드가 일치하지 않습니다!");
+			document.getElementById("userPassword").value="";
+			document.getElementById("passwordChk").value="";
+			document.getElementById("userPassword").focus();
+			return false;
+		}
+		
+		return true;
+	}
+	
+	function idChk() { //아이디 중복체크 Ajax로 비교 
+		let id = document.getElementById("userEmail").value;
+		let url = 'ajaxuserIdCheck.do?id='+id;
+		fetch(url).then((response)=>response.text())
+		.then((data)=>idCheck(data));
+	}
+	
+	function idCheck(str) {
+		if(str == '1'){
+			alert("사용할 수 있는 이메일 입니다.");
+			document.getElementById("btnId").value = 'Yes';
+			document.getElementById("btnId").disabled = true; //버튼 비활성화
+		}else{
+			alert("이미 사용하고 있는 이메일 입니다. 다시 입력하세요.");
+			document.getElementById("userEmail").value="";
+			document.getElementById("userEmail").focus();
+		}
+	}
+</script>
 
 </body>
 

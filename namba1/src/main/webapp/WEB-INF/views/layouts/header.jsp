@@ -6,7 +6,7 @@
                 <div class="col-lg-2">
                     <div class="header__logo">
                         <a href="./main.do">
-                            <img src="img/NAMBA1_logo.png" alt="">
+                            <img src="img/logo.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -26,8 +26,8 @@
                     <div class="header__right">
                         <a href="#" class="search-switch"><span class="icon_search"></span></a>
                         <!--로그인한경우 마이페이지 / 안한경우 로그인페이지-->
-                        <a href="./login.html"><span class="icon_profile"></span></a>
-                        <a href="./mypage.html"><span class="icon_profile"></span></a>
+                        <a href="./userLoginForm.do"><img src = "img/member.png" alt=""></span></a>
+                        <a href="./myPage.do"><img src ="img/exit.png" alt=""> </span></a>
                     </div>
                 </div>
             </div>
